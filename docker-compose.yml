@@ -1,0 +1,24 @@
+version: "3.9"
+
+
+services:
+
+  csserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: csserver
+    container_name: csserver
+    restart: always
+    ports:
+      - "27017:27017"
+
+  mysql:
+    image: mysql
+    container_name: csserver-mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: TralalaTrololo
+      MYSQL_DATABASE: csserver
