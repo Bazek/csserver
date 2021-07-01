@@ -11,14 +11,14 @@ services:
     container_name: csserver
     restart: always
     ports:
-      - "27017:27017"
+      - 27015:27015/udp
 
   mysql:
     image: mysql
     container_name: csserver-mysql
     restart: always
     ports:
-      - "3306:3306"
+      - 27006:3306
     environment:
       MYSQL_ROOT_PASSWORD: TralalaTrololo
       MYSQL_DATABASE: csserver
