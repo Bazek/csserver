@@ -34,6 +34,11 @@ RUN wget https://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz && \
     rm amxmodx-1.8.2-cstrike-linux.tar.gz && \
     echo "linux addons/amxmodx/dlls/amxmodx_mm_i386.so" > serverfiles/cstrike/addons/metamod/plugins.ini
 
+# Configuration
+COPY --chown=csserver cstrike /home/csserver/serverfiles/cstrike
+COPY --chown=csserver configure.sh /home/csserver/configure.sh
+RUN ./configure.sh
+
 # Entrypoint
-COPY entrypoint.sh /home/csserver
+COPY --chown=csserver entrypoint.sh /home/csserver/entrypoint.sh
 ENTRYPOINT ./entrypoint.sh

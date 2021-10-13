@@ -1,6 +1,10 @@
 version: "3.9"
 
 
+volumes:
+  home:
+
+
 services:
 
   csserver:
@@ -10,8 +14,9 @@ services:
     image: csserver
     container_name: csserver
     restart: always
+    volumes:
+      - home:/home/csserver
     ports:
-      - 27015:27015/tcp
       - 27015:27015/udp
 
   mysql:
@@ -23,3 +28,13 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: TralalaTrololo
       MYSQL_DATABASE: csserver
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    volumes:
+      - home:/csserver:ro
+      - ./nginx/conf.d/csserver.conf:/etc/nginx/conf.d/csserver.conf:ro
+    ports:
+      - 8016:8016
