@@ -4,7 +4,7 @@ MAINTAINER Petr Bartunek <petr.bartunek@firma.seznam.cz>
 # Dependencies
 RUN dpkg --add-architecture i386 && \
     apt-get update -y && apt-get upgrade -y && \
-    apt-get install -y \
+    apt-get install -y net-tools \
         curl wget less procps file tar bzip2 gzip unzip bsdmainutils python3 util-linux default-mysql-client \
         ca-certificates binutils bc jq tmux netcat cpio lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 && \
     apt-get clean && apt-get auto-clean && rm -rf /var/lib/apt/lists/*
@@ -26,3 +26,4 @@ RUN ./configure.sh
 # Entrypoint
 COPY --chown=csserver entrypoint.sh /home/csserver/entrypoint.sh
 ENTRYPOINT ./entrypoint.sh
+EXPOSE 27015/udp
