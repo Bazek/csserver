@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:bullseye
 MAINTAINER Petr Bartunek <petr.bartunek@firma.seznam.cz>
 
 # Dependencies
