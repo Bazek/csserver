@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian
 MAINTAINER Petr Bartunek <petr.bartunek@firma.seznam.cz>
 
 # Dependencies
