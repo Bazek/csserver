@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu
 MAINTAINER Petr Bartunek <petr.bartunek@firma.seznam.cz>
 
 # Dependencies
@@ -6,7 +6,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update -y && apt-get upgrade -y && \
     apt-get install -y net-tools \
         curl wget less procps file tar bzip2 gzip unzip bsdmainutils python3 util-linux default-mysql-client \
-        ca-certificates binutils bc jq tmux netcat cpio lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 && \
+        ca-certificates binutils bc jq tmux netcat cpio xz_utils lib32gcc-s1 lib32stdc++6 libsdl2-2.0-0:i386 && \
     apt-get clean && apt-get auto-clean && rm -rf /var/lib/apt/lists/*
 
 # User
@@ -15,15 +15,15 @@ WORKDIR /home/csserver
 USER csserver
 
 # Installation
-COPY --chown=csserver install.sh /home/csserver/install.sh
+COPY --chown=csserver:linuxGSM install.sh /home/csserver/install.sh
 RUN ./install.sh
 
 # Configuration
-COPY --chown=csserver cstrike /home/csserver/serverfiles/cstrike
-COPY --chown=csserver configure.sh /home/csserver/configure.sh
+COPY --chown=csserver:linuxGSM cstrike /home/csserver/serverfiles/cstrike
+COPY --chown=csserver:linuxGSM configure.sh /home/csserver/configure.sh
 RUN ./configure.sh
 
 # Entrypoint
-COPY --chown=csserver entrypoint.sh /home/csserver/entrypoint.sh
+COPY --chown=csserver:linuxGSM entrypoint.sh /home/csserver/entrypoint.sh
 ENTRYPOINT ./entrypoint.sh
 EXPOSE 27015/udp
