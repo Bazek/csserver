@@ -6,7 +6,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update -y && apt-get upgrade -y && \
     apt-get install -y net-tools \
         curl wget less procps file tar bzip2 gzip unzip bsdmainutils python3 util-linux default-mysql-client \
-        ca-certificates binutils bc jq tmux netcat cpio xz_utils lib32gcc-s1 lib32stdc++6 libsdl2-2.0-0:i386 && \
+        ca-certificates binutils bc jq tmux netcat cpio lib32gcc-s1 lib32stdc++6 libsdl2-2.0-0:i386 && \
     apt-get clean && apt-get auto-clean && rm -rf /var/lib/apt/lists/*
 
 # User
