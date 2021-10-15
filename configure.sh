@@ -22,5 +22,7 @@ rm -rf csdm-2.0*
 #unzip csdm-2.1.2.zip -d serverfiles/cstrike/
 
 # SteamBots
-unzip serverfiles/cstrike/SteamBots.zip "Install/cstrike/*" -d "serverfiles/cstrike"
+unzip serverfiles/cstrike/SteamBots.zip -d SteamBots
 rm serverfiles/cstrike/SteamBots.zip
+cp -r SteamBots/Install/cstrike/* serverfiles/cstrike/
+rm -rf SteamBots
