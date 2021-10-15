@@ -19,9 +19,3 @@ wget https://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz
 tar -zxvf amxmodx-1.8.2-cstrike-linux.tar.gz -C serverfiles/cstrike
 rm amxmodx-1.8.2-cstrike-linux.tar.gz
 echo "linux addons/amxmodx/dlls/amxmodx_mm_i386.so" > serverfiles/cstrike/addons/metamod/plugins.ini
-
-# CSDM
-wget https://www.bailopan.net/csdm/files/csdm-2.1.2.zip
-unzip csdm-2.1.2.zip -d serverfiles/cstrike
-rm csdm-2.1.2.zip
-echo engine >> serverfiles/cstrike/addons/amxmodx/configs/modules.ini

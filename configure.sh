@@ -10,3 +10,9 @@ for plugin in afk_manager_1-8-2 AntiSpawnKill killer_view rememberthescore round
     echo $plugin.amxx >> ../configs/plugins.ini
 done
 cd -
+
+# CSDM
+wget -O csdm-2.0.zip https://forums.alliedmods.net/attachment.php?attachmentid=4292
+unzip csdm-2.0.zip
+cp -r csdm-2.0/* serverfiles/cstrike/addons/amxmodx/
+rm -rf csdm-2.0*
