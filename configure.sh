@@ -20,3 +20,7 @@ rm -rf csdm-2.0*
 # CSDM 2.1
 #wget http://www.bailopan.net/csdm/files/csdm-2.1.2.zip
 #unzip csdm-2.1.2.zip -d serverfiles/cstrike/
+
+# SteamBots
+unzip serverfiles/cstrike/SteamBots.zip "Install/cstrike/*" -d "serverfiles/cstrike"
+rm serverfiles/cstrike/SteamBots.zip
