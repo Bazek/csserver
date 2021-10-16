@@ -9,7 +9,7 @@ ls serverfiles/cstrike/maps/ -1 | grep .bsp | sed s/.bsp//g > serverfiles/cstrik
 
 # Plugins
 cd serverfiles/cstrike/addons/amxmodx/scripting
-for plugin in AntiSpawnKill afk_manager_1-8-3 killer_view psd rememberthescore round_startmoney spec_hud_info ; do
+for plugin in AntiSpawnKill afk_manager_1-8-3 automatic_knife_duel killer_view psd rememberthescore round_startmoney spec_hud_info ; do
     ./amxxpc $plugin.sma -o../plugins/$plugin.amxx
     echo $plugin.amxx >> ../configs/plugins.ini
 done

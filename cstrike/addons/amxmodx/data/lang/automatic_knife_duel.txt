@@ -1,0 +1,38 @@
+"Automatic Knife Duel"
+fr:"Duel Automatique au Couteau"
+
+"<challenger: name|#userid|authid> <challenged: name|#userid|authid> - starts knife duel challenge"
+fr:"<provocateur: nom|#numero|authid> <provoque: nom|#numero|authid> - demarre un duel au couteau"
+
+"You can't start a knife challenge with the same player for challenger and challenged."
+fr:"Vous ne pouvez pas demarre un duel au couteau avec le meme joueur pour le provocateur et le provoque."
+
+"You can't start a knife challenge with two players of the same team when ^"mp_friendlyfire^" cvar is disabled (0)."
+fr:"Vous ne pouvez pas demarre un duel au couteau avec deux joueurs d'une meme equipe si la cvar ^"mp_friendlyfire^" est inactive (0)."
+
+"There is already a knife challenge between two players, only one challenge is allowed at the same time."
+fr:"Il y a deja un duel au couteau entre deux joueurs, seul un duel a la fois est autorise."
+
+"You started a knife challenge with ^"%s^" as challenger and ^"%s^" as challenged."
+fr:"Vous avez demarre un duel au couteau avec ^"%s^" en provocateur et ^"%s^" en provoque."
+
+"start a knife challenge with ^"%s^" as challenger and ^"%s^" as challenged."
+fr:"demarrer un duel au couteau avec ^"%s^" en provocateur et ^"%s^" en provoque."
+
+"You challenge %s to a knife duel! Await the answer within %.f seconds..."
+fr:"Vous provoquez %s en duel ! Attendez sa decision durant %.f secondes..."
+
+"You are challenged by \y%s \wto a knife duel!^n^nWhat will it be? You have \y%.f \wseconds to answer!^n^n1. Bring it on!^n2. No, I'd rather use my boomstick!"
+fr:"\y%s \wvous provoque pour un duel au couteau !^n^nVous avez \y%.f \wsecondes pour vous decider !^n^n1. Accepter^n2. Non, j'ai trop peur !"
+
+"%s didn't answer %s's knife duel challenge fast enough..."
+fr:"%s n'a pas repondu assez vite a la provocation en duel de %s."
+
+"%s turns down %s's knife duel challenge..."
+fr:"%s ne souhaite pas de battre au couteau contre %s..."
+
+"%s accepts %s's knife duel challenge!"
+fr:"%s accepte de se battre au couteau contre %s !"
+
+"Your opponent ^"%s^" has left the server. Knife challenge canceled."
+fr:"Votre adversaire ^"%s^" a quitte le serveur. Duel au couteau annule."

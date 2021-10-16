@@ -149,10 +149,10 @@ public plugin_init()
 	pcvar = create_cvar("afk_bomb_action_time", "10", FCVAR_NONE, "Time in seconds that a client can have the bomb when being AFK", .has_min = true, .min_val = 0.1)
 	bind_pcvar_float(pcvar, BombActionTime)
 
-	pcvar = create_cvar("afk_switch_to_spec_time", "20", FCVAR_NONE, "Time in seconds that an alive client or a client in appearance select menu can be AFK before he will be transferred to the spectator team^nSet this cvar to 0 to disable this feature and enable AFK kick management in replacement (if it's enabled)", .has_min = true, .min_val = 0.0)
+	pcvar = create_cvar("afk_switch_to_spec_time", "40", FCVAR_NONE, "Time in seconds that an alive client or a client in appearance select menu can be AFK before he will be transferred to the spectator team^nSet this cvar to 0 to disable this feature and enable AFK kick management in replacement (if it's enabled)", .has_min = true, .min_val = 0.0)
 	bind_pcvar_float(pcvar, SwitchToSpecTime)
 
-	pcvar = create_cvar("afk_kick_time", "40", FCVAR_NONE, "Time in seconds that every clients can be AFK before being kicked^nSet this cvar to 0 to disable this feature", .has_min = true, .min_val = 0.0)
+	pcvar = create_cvar("afk_kick_time", "0", FCVAR_NONE, "Time in seconds that every clients can be AFK before being kicked^nSet this cvar to 0 to disable this feature", .has_min = true, .min_val = 0.0)
 	bind_pcvar_float(pcvar, KickTime)
 
 	pcvar = create_cvar("afk_kick_spec_only_if_full", "1", FCVAR_NONE, "(0|1) - If the AFK kick management is enabled, it kick spectators only if the server is full", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 1.0)
