@@ -125,7 +125,7 @@ public ShowTimer()
 			
 		if(Timer[i] == 0) 
 		{ 
-			set_hudmessage(255, 255, 0, -1.0, -1.0, 0, 0.0, 1.5, 0.0, 1.0); 
+			set_hudmessage(255, 255, 0, -1.0, -10.0, 0, 0.0, 1.5, 0.0, 1.0);
 			show_hudmessage(i, "Spawn Protection Expired.");     
 		
 			if(pcvarType) 
@@ -148,7 +148,7 @@ public RemoveProtection(Weapon)
     { 
         new id = get_pdata_cbase(Weapon, 41, 4); // The offset name of 41 is m_pPlayer. 
          
-        if(Timer[id] == 0) 
+        if(Timer[id] <= 0)
             return HAM_IGNORED; 
              
         else if(!get_pcvar_num(cEnable)) 
@@ -157,10 +157,11 @@ public RemoveProtection(Weapon)
         else if(!get_pcvar_num(cShoot)) 
             return HAM_IGNORED; 
 
-        set_hudmessage(0, 255, 0, -1.0, -1.0, 0, 0.0, 1.5, 0.0, 0.0); 
+        set_hudmessage(0, 255, 0, -1.0, -10.0, 0, 0.0, 1.5, 0.0, 0.0);
         show_hudmessage(id, "Spawn Protection Disabled - Weapon Used!"); 
 
-        Shot[id] = true; 
+        Timer[id] = 0;
+        Shot[id] = true;
         set_user_godmode(id); 
     } 
              
