@@ -240,7 +240,7 @@ public plugin_init()
 	register_cvar("gg_version",GG_VERSION,FCVAR_SERVER);
 	set_cvar_string("gg_version",GG_VERSION);
 
-	// mehrsprachige unterstützung (nein, spreche ich nicht Deutsches)
+	// mehrsprachige unterstï¿½tzung (nein, spreche ich nicht Deutsches)
 	register_dictionary("gungame.txt");
 	register_dictionary("common.txt");
 	register_dictionary("adminvote.txt");
@@ -672,7 +672,7 @@ public client_authorized(id)
 }
 
 // client leaves, reset values
-public client_disconnect(id)
+public client_disconnected(id)
 {
 	// remove certain tasks
 	remove_task(TASK_VERIFY_WEAPON+id);
