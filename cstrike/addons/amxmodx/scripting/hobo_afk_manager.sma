@@ -189,7 +189,7 @@ public check_afktime(id)
 		if(afkTimeLeft>0)
 		{
 			set_hudmessage(0, 100, 200, -1.0, 0.25, 1, 0.1, 3.0, 0.05, 0.05, -1)
-			ShowSyncHudMsg( id, msgSync, "You have %d seconds to move or you will be %s for being AFK", afkTimeLeft, punishName )
+			ShowSyncHudMsg( id, msgSync, "AFK: You have %d seconds to move or you will be %s!", afkTimeLeft, punishName )
 		}
 	} 
 	
