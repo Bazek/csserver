@@ -39,8 +39,6 @@ services:
     image: php-fpm-alpine
     container_name: php
     restart: always
-    volumes:
-      - ./csx_stats:/csx_stats
     ports:
       - 9016:9000
 
