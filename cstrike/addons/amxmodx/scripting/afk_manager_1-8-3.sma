@@ -1,4 +1,4 @@
-/*	Formatright © 2016, Freeman
+/*	Formatright ï¿½ 2016, Freeman
 
 	This plugin is free software;
 	you can redistribute it and/or modify it under the terms of the
@@ -143,16 +143,16 @@ public plugin_init()
 	new pcvar = create_cvar("afk_global_messages_away_time", "10", FCVAR_NONE, "Time in seconds that a client can be AFK before being able to trigger AFK global messages^nAFK gobal messages are displayed to a team when all the enemies of the opposing team are AFK^nSet this cvar to 0 to disable the display of AFK global messages", .has_min = true, .min_val = 0.0)
 	bind_pcvar_float(pcvar, GlobalMessagesAwayTime)
 
-	pcvar = create_cvar("afk_bomb_action", "2", FCVAR_NONE, "AFK bomb management action:^n2 - transfer the bomb from the AFK bomb carrier to the nearest non-AFK terrorist^n1 - force the AFK bomb carrier to drop the bomb^n0 - do nothing with the bomb", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 2.0) 
+	pcvar = create_cvar("afk_bomb_action", "1", FCVAR_NONE, "AFK bomb management action:^n2 - transfer the bomb from the AFK bomb carrier to the nearest non-AFK terrorist^n1 - force the AFK bomb carrier to drop the bomb^n0 - do nothing with the bomb", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 2.0)
 	bind_pcvar_num(pcvar, BombAction)
 
 	pcvar = create_cvar("afk_bomb_action_time", "10", FCVAR_NONE, "Time in seconds that a client can have the bomb when being AFK", .has_min = true, .min_val = 0.1)
 	bind_pcvar_float(pcvar, BombActionTime)
 
-	pcvar = create_cvar("afk_switch_to_spec_time", "90", FCVAR_NONE, "Time in seconds that an alive client or a client in appearance select menu can be AFK before he will be transferred to the spectator team^nSet this cvar to 0 to disable this feature and enable AFK kick management in replacement (if it's enabled)", .has_min = true, .min_val = 0.0)
+	pcvar = create_cvar("afk_switch_to_spec_time", "20", FCVAR_NONE, "Time in seconds that an alive client or a client in appearance select menu can be AFK before he will be transferred to the spectator team^nSet this cvar to 0 to disable this feature and enable AFK kick management in replacement (if it's enabled)", .has_min = true, .min_val = 0.0)
 	bind_pcvar_float(pcvar, SwitchToSpecTime)
 
-	pcvar = create_cvar("afk_kick_time", "240", FCVAR_NONE, "Time in seconds that every clients can be AFK before being kicked^nSet this cvar to 0 to disable this feature", .has_min = true, .min_val = 0.0)
+	pcvar = create_cvar("afk_kick_time", "40", FCVAR_NONE, "Time in seconds that every clients can be AFK before being kicked^nSet this cvar to 0 to disable this feature", .has_min = true, .min_val = 0.0)
 	bind_pcvar_float(pcvar, KickTime)
 
 	pcvar = create_cvar("afk_kick_spec_only_if_full", "1", FCVAR_NONE, "(0|1) - If the AFK kick management is enabled, it kick spectators only if the server is full", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 1.0)
@@ -182,7 +182,7 @@ public plugin_init()
 	pcvar = create_cvar("afk_min_players", "0", FCVAR_NONE, "Minimum players to get the plugin working", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 32.0)
 	bind_pcvar_num(pcvar, MinPlayers)
 
-	pcvar = create_cvar("afk_check_v_angle", "0", FCVAR_NONE, "(0|1) - Disable/Enable check of view angle", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 1.0)
+	pcvar = create_cvar("afk_check_v_angle", "1", FCVAR_NONE, "(0|1) - Disable/Enable check of view angle", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 1.0)
 	bind_pcvar_num(pcvar, CheckViewAngle)
 
 	pcvar = create_cvar("afk_colored_messages", "1", FCVAR_NONE, "(0|1) - Disable/Enable colored messages", .has_min = true, .min_val = 0.0, .has_max = true, .max_val = 1.0)
