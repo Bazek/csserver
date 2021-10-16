@@ -31,12 +31,25 @@ services:
       MYSQL_ROOT_PASSWORD: TralalaTrololo
       MYSQL_DATABASE: csserver
 
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile.php
+    image: php-fpm-alpine
+    container_name: php
+    restart: always
+    volumes:
+      - ./csx_stats:/csx_stats:ro
+    ports:
+      - 9016:9000
+
   nginx:
-    image: nginx
+    image: nginx:alpine
     container_name: nginx
     restart: always
     volumes:
       - home:/csserver:ro
       - ./nginx/conf.d/csserver.conf:/etc/nginx/conf.d/csserver.conf:ro
+      - ./csx_stats:/csx_stats:ro
     ports:
       - 8016:8016
