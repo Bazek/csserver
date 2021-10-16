@@ -125,7 +125,7 @@ public ShowTimer()
 			
 		if(Timer[i] == 0) 
 		{ 
-			set_hudmessage(255, 255, 0, -1.0, -10.0, 0, 0.0, 1.5, 0.0, 1.0);
+			set_hudmessage(255, 255, 0, -1.0, -0.35, 0, 0.0, 1.5, 0.0, 1.0);
 			show_hudmessage(i, "Spawn Protection Expired.");     
 		
 			if(pcvarType) 
@@ -157,7 +157,7 @@ public RemoveProtection(Weapon)
         else if(!get_pcvar_num(cShoot)) 
             return HAM_IGNORED; 
 
-        set_hudmessage(0, 255, 0, -1.0, -10.0, 0, 0.0, 1.5, 0.0, 0.0);
+        set_hudmessage(0, 255, 0, -1.0, -0.35, 0, 0.0, 1.5, 0.0, 0.0);
         show_hudmessage(id, "Spawn Protection Disabled - Weapon Used!"); 
 
         Timer[id] = 0;
