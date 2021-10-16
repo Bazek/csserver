@@ -59,30 +59,6 @@
 #define PUNISH_NOMODEL 4
 
 
-enum CsInternalModel
-{
-    CS_DONTCHANGE = 0,
-    CS_CT_URBAN = 1,
-    CS_T_TERROR = 2,
-    CS_T_LEET = 3,
-    CS_T_ARCTIC = 4,
-    CS_CT_GSG9 = 5,
-    CS_CT_GIGN = 6,
-    CS_CT_SAS = 7,
-    CS_T_GUERILLA = 8,
-    CS_CT_VIP = 9,
-    CZ_T_MILITIA = 10,
-    CZ_CT_SPETSNAZ = 11
-}
-
-enum CsTeams 
-{
-    CS_TEAM_UNASSIGNED = 0,
-    CS_TEAM_T = 1,
-    CS_TEAM_CT = 2,
-    CS_TEAM_SPECTATOR = 3
-}
-
 new g_oldangles[MAX_PLAYERS+1][3], g_afktime[MAX_PLAYERS+1], saved_freq, bool:freezetimeOver
 new bool:player_spawned[MAX_PLAYERS+1],  msgSync, maxplayers, bool:selectedNoModel[MAX_PLAYERS+1]
 //cvars
@@ -229,7 +205,7 @@ public check_afktime(id)
 }
 
 
-public client_disconnect(id)
+public client_disconnected(id)
 {	
 	g_afktime[id] = 0
 	selectedNoModel[id]= false	
@@ -242,7 +218,7 @@ public client_putinserver(id)
 	if( is_user_bot(id) || is_user_hltv(id) )
 		return
 	
-	if( checkImmunity(id) )
+	if( checkImmunity(id) && get_pcvar_float( unassignedTime ) )
 	{
 		new arrId[1]
 		arrId[0] = id

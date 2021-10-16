@@ -444,7 +444,7 @@ public client_putinserver( id )
 }
 
 
-public client_disconnect( id )
+public client_disconnected( id )
 {
 	save_player( id, 1 );
 	g_Storage[id][CONNECT] = 0;
