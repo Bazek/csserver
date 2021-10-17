@@ -1,57 +1,47 @@
 {% extends 'inc_base.tpl' %}
 {% block title   %}Top Ranking{% endblock %}
 {% block content %}
-		<table>
-			<thead>
-			<tr>
-				<td colspan="23" class="catHead">
-					<span class="genmed"><b>Player Ranking TOP 10</b></span>
-				</td>
-			</tr>
-			</thead>
-		</table>
 		<table class="table table-hover">
 			<thead>
 			<tr>
-				<td scope="col" rowspan="2">Rank</td>
-				<td scope="col" rowspan="2"></td>
-				<td scope="col" rowspan="2"></td>
-				<td scope="col" rowspan="2">Name</td>
-				<td scope="col" rowspan="2">Play Time</td>
-				<td scope="col" rowspan="2">Score</td>
-				<td scope="col" rowspan="2">Kills</td>
-				<td scope="col" rowspan="2">Deaths</td>
-				<td scope="col" rowspan="2">TeamKills</td>
-				<td scope="col" rowspan="2">ELO</td>
+				<th scope="col" rowspan="2" style="min-width:40px">Rank</th>
+				<th scope="col" rowspan="2"></th>
+				<th scope="col" rowspan="2"></th>
+				<th scope="col" rowspan="2" style="min-width:160px">Name</th>
+				<th scope="col" rowspan="2" style="min-width:70px">Score</th>
+				<th scope="col" rowspan="2" style="min-width:45px">Kills</th>
+				<th scope="col" rowspan="2" style="min-width:60px">Deaths</th>
+				<th scope="col" rowspan="2" style="min-width:70px">Rate</th>
+				<th scope="col" rowspan="2" style="min-width:80px">TeamKills</th>
+				<th scope="col" rowspan="2" style="min-width:60px">Shots</th>
+				<th scope="col" rowspan="2" style="min-width:50px">Hits</th>
+				<th scope="col" rowspan="2" style="min-width:100px">Accuracy</th>
+				<th scope="col" rowspan="2" style="min-width:75px">Damages</th>
+				<th scope="col" rowspan="2" style="min-width:85px">Efficiency</th>
+				<th scope="col" rowspan="2" style="min-width:80px">ELO</th>
 				<!--
-				<td scope="col" rowspan="2">Hits</td>
-				<td scope="col" rowspan="2">Damages</td>
-				<td scope="col" rowspan="2">Shots</td>
-				<td scope="col" rowspan="2">HeadShots</td>
-				<td scope="col" rowspan="2">Efficiency.</td>
-				<td scope="col" rowspan="2">Accuracy.</td>
-				<td scope="col" rowspan="2">Accuracy<br />HeadShots.</td>
-				<td scope="col" rowspan="2">K/D Rate.</td>
-				<td scope="col" colspan="7">HIT POSITION.</td>
+				<th scope="col" rowspan="2">HeadShots</th>
+				<th scope="col" rowspan="2">HS Accuracy</th>
+				<th scope="col" colspan="8">HIT POSITIONS</th>
 				-->
 			</tr>
 			<!--
 			<tr>
-				<td scope="col">HEAD</td>
-				<td scope="col">CHEST</td>
-				<td scope="col">STOMACH</td>
-				<td scope="col">LEFT ARM</td>
-				<td scope="col">RIGHT ARM</td>
-				<td scope="col">LEFT LEG</td>
-				<td scope="col">RIGHT LEG</td>
-				<td scope="col">SHILED (NOT WORKING)</td>
+				<th scope="col">HEAD</th>
+				<th scope="col">CHEST</th>
+				<th scope="col">STOMACH</th>
+				<th scope="col">LEFT ARM</th>
+				<th scope="col">RIGHT ARM</th>
+				<th scope="col">LEFT LEG</th>
+				<th scope="col">RIGHT LEG</th>
+				<th scope="col">SHILED (NOT WORKING)</th>
 			</tr>
 			-->
 			</thead>
 			<tbody>
 			{% for record in ranking %}
 			<tr class="table-dark">
-				<th scope="row">{{ record.csx_rank }}</th>
+				<td scope="row"><strong>{{ record.csx_rank }}</strong></td>
 				<td>
 					<span class="flag-icon flag-icon-{{record.country}}"></span>
 				</td>
@@ -68,21 +58,20 @@
 						{% endif %}
 					</form>
 				</td>
-				<td>{{ record.online_time }}</td>
 				<td>{{ record.csx_score }}</td>
 				<td>{{ record.csx_kills }}</td>
 				<td>{{ record.csx_deaths }}</td>
-				<td>{{ record.csx_tks }}</td>
-				<td><img src="images/{{ record.csx_elo }}" style="width:25%" alt="{{record.csx_elo_name}}"></td>
-				<!--
-				<td>{{ record.csx_hits }}</td>
-				<td>{{ record.csx_dmg }}</td>
-				<td>{{ record.csx_shots }}</td>
-				<td>{{ record.csx_hs }}</td>
-				<td>{{ record.efficiency }}</td>
-				<td>{{ record.accuracy }}</td>
-				<td>{{ record.accuracyHS }}</td>
 				<td>{{ record.kdrate }}</td>
+				<td>{{ record.csx_tks }}</td>
+				<td>{{ record.csx_shots }}</td>
+				<td>{{ record.csx_hits }}</td>
+				<td>{{ record.accuracy }}%</td>
+				<td>{{ record.csx_dmg }}</td>
+				<td>{{ record.efficiency }}%</td>
+				<td><img src="images/{{ record.csx_elo }}" style="width:75px" alt="{{record.csx_elo_name}}"></td>
+				<!--
+				<td>{{ record.csx_hs }}</td>
+				<td>{{ record.accuracyHS }}</td>
 				<td>{{ record.h_head }}</td>
 				<td>{{ record.h_chest }}</td>
 				<td>{{ record.h_stomach }}</td>

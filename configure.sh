@@ -2,7 +2,7 @@
 
 # Public IP
 MY_PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
-sed s/__MY_PUBLIC_IP__/$MY_PUBLIC_IP/g -i serverfiles/cstrike/csserver.cfg
+sed s/__MY_PUBLIC_IP__/$MY_PUBLIC_IP/g -i serverfiles/cstrike/motd.txt serverfiles/cstrike/csserver.cfg
 
 # Maps
 ls serverfiles/cstrike/maps/ -1 | grep .bsp | sed s/.bsp//g > serverfiles/cstrike/addons/amxmodx/configs/maps.ini

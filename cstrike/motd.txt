@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <title>Stylování CSS</title>
+    </head>
+    <body style="margin:0px;">
+        <iframe src="http://__MY_PUBLIC_IP__:8016/csx_stats/index.php"
+            width="1080" height="540"
+            hspace="0" vspace="0" marginwidth="0" marginheight="0"
+            frameborder="0" align="top" scrolling="no"
+        ></iframe>
+    </body>
+</html>
