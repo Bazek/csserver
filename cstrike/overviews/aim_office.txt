@@ -1,0 +1,14 @@
+// overview description file for aim_office.bsp
+
+global 
+{
+	ZOOM	3.13
+	ORIGIN	-428.50 	852	139.50
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/aim_office.bmp"
+	HEIGHT	-384
+}
