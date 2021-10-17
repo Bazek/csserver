@@ -1,0 +1,9 @@
+gfx/env/mpa12_csbk.tga
+gfx/env/mpa12_csdn.tga
+gfx/env/mpa12_csft.tga
+gfx/env/mpa12_cslf.tga
+gfx/env/mpa12_csrt.tga
+gfx/env/mpa12_csup.tga
+models/S3B/skla_tree01.mdl
+PODBot/WPTDefault/fy_snow_s.pwf
+maps/fy_snow_s.res
