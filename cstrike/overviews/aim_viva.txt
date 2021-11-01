@@ -1,0 +1,15 @@
+// overview description file for aim_viva.tga
+
+global
+{
+	ZOOM	1.92
+	ORIGIN	0	0	-561
+	ROTATED	0
+}
+
+layer
+{
+	IMAGE "overviews/aim_viva.tga"
+	HEIGHT	-561
+}
+

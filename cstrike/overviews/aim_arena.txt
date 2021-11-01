@@ -1,0 +1,14 @@
+// overview description file for aim_arena.bsp
+
+global 
+{
+ZOOM 4.16
+ORIGIN 655.00 -256.00 -271
+ROTATED 0
+}
+
+layer 
+{
+IMAGE "overviews/aim_arena.bmp"
+HEIGHT 35
+}

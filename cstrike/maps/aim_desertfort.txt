@@ -1,0 +1,6 @@
+aim_desertfort by pneumatic
+
+T's: Kill all CT's
+CT's: Kill all T's
+
+(Press FIRE To Continue)

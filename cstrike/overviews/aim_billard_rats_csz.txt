@@ -1,0 +1,16 @@
+// overview description file for aim_billard_rats_csz.bsp by lilou&luniz //
+
+global 
+{
+ZOOM 	3.54
+ORIGIN 	-355.91	386.38	192.00
+ROTATED 0
+}
+
+layer 
+{
+IMAGE "overviews/aim_billard_rats_csz.bmp"
+HEIGHT 	-767
+}
+
+
