@@ -6,7 +6,7 @@ define("DB_PASS", "TralalaTrololo"); // Database password.
 define("DB_NAME", "csserver"); // Database Name.
 
 // Steam Api Key.
-define("STEAM_API_KEY", "");
+define("STEAM_API_KEY", "__STEAM_API_KEY__");
 
 // Twig Directories.
 define("TWIG_TEMPLATE_DIR", "templates");
