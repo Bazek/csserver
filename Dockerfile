@@ -27,3 +27,7 @@ RUN ./configure.sh
 COPY --chown=csserver:linuxGSM entrypoint.sh /home/csserver/entrypoint.sh
 ENTRYPOINT ./entrypoint.sh
 EXPOSE 27015/udp
+
+# Default settings
+ENV SV_PASSWORD TralalaTrololo
+ENV GG_ENABLED 0

@@ -1,0 +1,15 @@
+
+
+global
+{
+	ZOOM	1.55
+	ORIGIN	432	768	-56
+	ROTATED	0
+}
+
+layer
+{
+	IMAGE "overviews/xmas_lodge.bmp"
+	HEIGHT	-417
+}
+

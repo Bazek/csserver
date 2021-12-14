@@ -1,0 +1,14 @@
+// overview description file for de_christmas.bsp
+
+global 
+{
+	ZOOM	1.81
+	ORIGIN	275.68	1735.00	-900.00
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/de_christmas.bmp"
+	HEIGHT	-1849
+}
