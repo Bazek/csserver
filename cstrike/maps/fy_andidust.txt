@@ -1,0 +1,66 @@
+===================================================
+Map Name		: fy_andidust
+Version			: v1.0 (fertig)
+Spiel Typ		: Counter-Strike
+Anzahl der Teams	: 2
+Vergeschlagene Spieler	: 4-16 (32 Spieler MAX)
+Datei Größe		: 715 kb
+Fertig gestellt		: 3.4.04
+Dateiname		: fy_andidust.zip
+Author			: <---Andi---> 
+Email Address		: w.mosgoeller@utanet.at
+ICQ			: - (weiß nicht :D)
+Website			: - (gibt keine)
+Andere Maps vom Autor	: Mein Erstlingswerk
+
+
+===================================================
+Neue Texturen		: Nein
+Neuer Himmel		: Nein
+Neue Models		: Nein
+Neue Sounds		: Nein
+Benutzter Editor	: Hammer 3.4
+Compiler		: ZHLT Tools
+Compile Zeit		: 2 Minuten
+Compile PC		: AMD 2000+ - 512 MB Ram - Win98
+===================================================
+
+
+---------------------------------
+**  INSTALLATIONS INFORMATION  **
+---------------------------------
+Die Dateien fy_andidust.bsp und fy_andidust.txt in das Half-Life/cstrike/maps
+Verzeichniss kopieren.
+===================================================
+
+
+-------------------------------
+**  INFORMATION  **
+-------------------------------
+Meine erste Map. Sie hat noch einige Texturfehler, aber sie fallen nicht arg auf.
+===================================================
+
+Dank geht an:
+
+- Alle die meine Map getestet haben
+- das Mapscene Team (www.mapscene.de)
+
+===================================================
+
+-------------------
+** LEGALES ZEUG  **
+-------------------
+"fy_andidust" ist copyright 2004, <---Andi--->
+
+Andere dürfen diese Map NICHT als Grundlage für ihre Map nehmen
+es sei denn Sie haben Bestätigung von MIR.
+
+Diese Map darf NICHT auf irgendeine Weise weiterverbreitet werden
+es sei denn sie ist in ihrer Orginal .zip welche die .bsp
+und diese readme beinhaltet
+
+Diese Map darf AUSSCHLIESLICH über das Internet weiterverbreitet
+werden. Sie darf NICHT auf eine CD gemacht werden ohne meine
+Erlaubniss.
+===================================================
+

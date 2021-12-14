@@ -1,6 +1,5 @@
 aim_billard_rats_csz - aim
-       - web  > http://perso.orange.fr/qwak2/
-        -> http://www.cscargo.net
+       - web  -> http://pagesperso-orange.fr/qwak2/
 -----------------------------------------
 est une map de style rats
 on est plongé dans un monde miniature 

@@ -1,0 +1,13 @@
+
+::: FY_INDOORPOOL_V3 :::
+--
+2006 by Zaknah
+All rights reserved.
+--
+Terrorists:
+Kill all Counter-Terrorists.
+--
+Counter-Terrorists:
+Kill all Terrorists.
+--
+::::::::::::::::::::::::
