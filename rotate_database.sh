@@ -15,7 +15,9 @@ while getopts "u:p:s:d:" opt; do
      esac
 done
 
+docker compose down
 docker exec mysql mysql -u $USER -p$PASSWORD -s -N -e "CREATE DATABASE $DESTINATION_DATABASE;";
 for table in `docker exec mysql mysql -u $USER -p$PASSWORD -s -N -e "USE $SOURCE_DATABASE; SHOW TABLES FROM $SOURCE_DATABASE;"`; do
   docker exec mysql mysql -u $USER -p$PASSWORD -s -N -e "USE $SOURCE_DATABASE; RENAME TABLE $SOURCE_DATABASE.$table TO $DESTINATION_DATABASE.$table;";
 done;
+docker compose up --detach
