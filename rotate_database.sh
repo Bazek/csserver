@@ -1,11 +1,12 @@
 #!/bin/bash -e
 
-export USER="root"
-export PASSWORD="TralalaTrololo"
-export SOURCE_DATABASE="csserver"
-export DESTINATION_DATABASE="${SOURCE_DATABASE}_`date +%Y_%m`"
+USER="root"
+PASSWORD="TralalaTrololo"
+SOURCE_DATABASE="csserver"
+DESTINATION_DATABASE="${SOURCE_DATABASE}_`date +%Y_%m`"
 
-while etopts "u:p:s:d:" opt; do
+while getopts "u:p:s:d:" opt; do
+     # shellcheck disable=SC2220
      case $opt in
          u) USER=$OPTARG;;
          p) PASSWORD=$OPTARG;;
