@@ -13,7 +13,7 @@
 	</head>
 	<body topmargin="0" leftmargin="-2">
 	<div class="container" style="max-width:none">
-		<h1>Vánoční Stylování - Merry Christmas!</h1>
+		<h1>Stylování Hlaviček!</h1>
 		{% block content %}{% endblock %}
 	</div>
 	</body>
