@@ -19,6 +19,9 @@ services:
       - home:/home/csserver
     ports:
       - 27015:27015/udp
+    environment:
+      SV_PASSWORD: ""
+      GG_ENABLED: "0"
 
   mysql:
     image: mysql
@@ -39,6 +42,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.php
+      args:
+        STEAM_API_KEY: "__STEAM_API_KEY__"
     image: php-fpm-alpine
     container_name: php
     restart: always
