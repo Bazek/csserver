@@ -2,7 +2,7 @@
 <html lang="cs">
     <head>
         <meta charset="utf-8">
-        <title>Stylování Hlaviček!</title>
+        <title>Velikonoční Stylování 2022</title>
     </head>
     <body style="margin:0px;">
         <iframe src="http://__MY_PUBLIC_IP__:8016/csx_stats/index.php"
