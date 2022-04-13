@@ -1,0 +1,9 @@
+A simple team-deathmatch map.
+Players respawn once one of the teams is completely defeated.
+
+Mission:Neutralize the enemy team.
+
+Note:This map features a few teleport points wich can be used to surprise your enemies.
+Have fun!
+
+Map by: Siaba_m

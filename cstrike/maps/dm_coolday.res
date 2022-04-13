@@ -1,0 +1,11 @@
+maps/dm_coolday.txt
+maps/dm_coolday.res
+maps/dm_coolday.nav
+models/coolday/ec_palm.mdl
+models/coolday/Grass2.mdl
+models/coolday/MARQUIS.mdl
+models/coolday/mtbike.mdl
+models/coolday/palm1A.mdl
+models/coolday/umbrella_cafe.mdl
+overviews/dm_coolday.txt
+overviews/dm_coolday.bmp
